@@ -22,7 +22,7 @@ databaseChangeLog(logicalFilePath: 'script/db/fd_service.groovy') {
     }
 
     changeSet(id: '2019-10-26-fd-route-add-column', author: 'zongw.lee@gmail.com') {
-        addColumn(tableName: 'fd_route') {
+        addColumn(tableName: 'FD_ROUTE') {
             column(name: 'STRIP_PREFIX', type: 'INT UNSIGNED', remarks: '是否去前缀')
             column(name: 'SENSITIVE_HEADERS', type: 'TEXT', remarks: '敏感头部列表')
             column(name: 'ROUTE_ID', type: 'VARCHAR(64)', remarks: '路由ID') {
